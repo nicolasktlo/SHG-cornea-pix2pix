@@ -19,8 +19,6 @@ This project investigates whether a Pix2Pix conditional generative adversarial n
 
 - `dataset.py` — dataset loading class for paired backward/forward images
 - `model.py` — generator and discriminator architectures
-- `train.py` — training script
-- `test.py` — test-set evaluation
 - `1_preprocessing.ipynb` — data preparation walkthrough
 - `2_training_and_evaluation.ipynb` — training and evaluation walkthrough
 
