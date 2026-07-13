@@ -15,6 +15,10 @@ This project investigates whether a Pix2Pix conditional generative adversarial n
 - **Training**: Adam optimiser (lr = 2e-4, betas = 0.5/0.999), batch size 16
 - **Hardware**: MacBook Pro (Apple M4 Pro, 24GB unified memory), PyTorch MPS backend
 
+### Data Splitting
+
+To prevent data leakage, the train/validation/test split was performed at the level of whole imaging stacks rather than individual patches. Each stack was assigned entirely to one split (train, validation, or test), ensuring that patches from the same underlying tissue stack never appear across multiple splits. This avoids overly optimistic performance estimates that can arise when structurally similar patches from the same stack are shared between training and evaluation sets.
+
 ## Contents
 
 - `dataset.py` — dataset loading class for paired backward/forward images
