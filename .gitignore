@@ -1,0 +1,8 @@
+checkpoints/
+samples/
+test_samples/
+data/
+*.pth
+*.tif
+__pycache__/
+.ipynb_checkpoints/
